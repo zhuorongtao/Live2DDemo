@@ -1,0 +1,968 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		180FB7BB1C5B5F3500AF0FFC /* HaruViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180FB7BA1C5B5F3500AF0FFC /* HaruViewController.swift */; };
+		1833D5C91C5B1E1F00897BA6 /* DaiLive2DViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1833D5BD1C5B1E1F00897BA6 /* DaiLive2DViewController.mm */; };
+		1833D5CA1C5B1E1F00897BA6 /* Live2DInfoLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1833D5C01C5B1E1F00897BA6 /* Live2DInfoLoader.m */; };
+		1833D5CB1C5B1E1F00897BA6 /* Live2DParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1833D5C21C5B1E1F00897BA6 /* Live2DParameter.m */; };
+		1833D5CC1C5B1E1F00897BA6 /* Live2DParameterValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1833D5C41C5B1E1F00897BA6 /* Live2DParameterValue.m */; };
+		1833D5CD1C5B1E1F00897BA6 /* Live2DPart.m in Sources */ = {isa = PBXBuildFile; fileRef = 1833D5C61C5B1E1F00897BA6 /* Live2DPart.m */; };
+		1833D5CE1C5B1E1F00897BA6 /* Live2DPartValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1833D5C81C5B1E1F00897BA6 /* Live2DPartValue.m */; };
+		1833D5D21C5B2CEA00897BA6 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1833D5D01C5B2CEA00897BA6 /* CustomViewController.swift */; };
+		1833D5D31C5B2CEA00897BA6 /* CustomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1833D5D11C5B2CEA00897BA6 /* CustomViewController.xib */; };
+		188147EF1C59FC400019ABB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188147EE1C59FC400019ABB5 /* AppDelegate.swift */; };
+		188147F11C59FC400019ABB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188147F01C59FC400019ABB5 /* ViewController.swift */; };
+		188147F61C59FC400019ABB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 188147F51C59FC400019ABB5 /* Assets.xcassets */; };
+		188147F91C59FC400019ABB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188147F71C59FC400019ABB5 /* LaunchScreen.storyboard */; };
+		188148041C59FC400019ABB5 /* Live2DDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188148031C59FC400019ABB5 /* Live2DDemoTests.swift */; };
+		1881480F1C59FC400019ABB5 /* Live2DDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1881480E1C59FC400019ABB5 /* Live2DDemoUITests.swift */; };
+		188148381C59FD560019ABB5 /* L2DBaseModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1881481F1C59FD560019ABB5 /* L2DBaseModel.cpp */; };
+		188148391C59FD560019ABB5 /* L2DExpressionMotion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 188148211C59FD560019ABB5 /* L2DExpressionMotion.cpp */; };
+		1881483A1C59FD560019ABB5 /* L2DEyeBlink.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 188148231C59FD560019ABB5 /* L2DEyeBlink.cpp */; };
+		1881483B1C59FD560019ABB5 /* L2DMatrix44.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 188148251C59FD560019ABB5 /* L2DMatrix44.cpp */; };
+		1881483C1C59FD560019ABB5 /* L2DModelMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 188148271C59FD560019ABB5 /* L2DModelMatrix.cpp */; };
+		1881483D1C59FD560019ABB5 /* L2DMotionManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 188148291C59FD560019ABB5 /* L2DMotionManager.cpp */; };
+		1881483E1C59FD560019ABB5 /* L2DPhysics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1881482B1C59FD560019ABB5 /* L2DPhysics.cpp */; };
+		1881483F1C59FD560019ABB5 /* L2DPose.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1881482D1C59FD560019ABB5 /* L2DPose.cpp */; };
+		188148401C59FD560019ABB5 /* L2DTargetPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 188148301C59FD560019ABB5 /* L2DTargetPoint.cpp */; };
+		188148411C59FD560019ABB5 /* L2DTextureDesc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 188148321C59FD560019ABB5 /* L2DTextureDesc.cpp */; };
+		188148421C59FD560019ABB5 /* L2DViewMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 188148341C59FD560019ABB5 /* L2DViewMatrix.cpp */; };
+		188148431C59FD560019ABB5 /* Live2DFramework.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 188148361C59FD560019ABB5 /* Live2DFramework.cpp */; };
+		188148B61C5A01C10019ABB5 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188148B51C5A01C10019ABB5 /* GLKit.framework */; };
+		188148B81C5A01D10019ABB5 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188148B71C5A01D10019ABB5 /* OpenGLES.framework */; };
+		188149A91C5A04700019ABB5 /* AccelHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 188149911C5A04700019ABB5 /* AccelHelper.mm */; };
+		188149AA1C5A04700019ABB5 /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 188149931C5A04700019ABB5 /* FileManager.m */; };
+		188149AB1C5A04700019ABB5 /* LAppLive2DManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 188149961C5A04700019ABB5 /* LAppLive2DManager.mm */; };
+		188149AC1C5A04700019ABB5 /* LAppModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 188149981C5A04700019ABB5 /* LAppModel.mm */; };
+		188149AD1C5A04700019ABB5 /* LAppRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1881499A1C5A04700019ABB5 /* LAppRenderer.mm */; };
+		188149AE1C5A04700019ABB5 /* LAppTextureDesc.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1881499C1C5A04700019ABB5 /* LAppTextureDesc.mm */; };
+		188149AF1C5A04700019ABB5 /* LAppView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1881499E1C5A04700019ABB5 /* LAppView.mm */; };
+		188149B01C5A04700019ABB5 /* ModelSetting.mm in Sources */ = {isa = PBXBuildFile; fileRef = 188149A01C5A04700019ABB5 /* ModelSetting.mm */; };
+		188149B11C5A04700019ABB5 /* OffScreenImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 188149A21C5A04700019ABB5 /* OffScreenImage.m */; };
+		188149B21C5A04700019ABB5 /* PlatformManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 188149A41C5A04700019ABB5 /* PlatformManager.mm */; };
+		188149B31C5A04700019ABB5 /* SimpleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 188149A61C5A04700019ABB5 /* SimpleImage.m */; };
+		188149B41C5A04700019ABB5 /* TouchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 188149A81C5A04700019ABB5 /* TouchManager.m */; };
+		188149B61C5A066E0019ABB5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188149B51C5A066E0019ABB5 /* AVFoundation.framework */; };
+		188149B81C5A067D0019ABB5 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188149B71C5A067D0019ABB5 /* CoreMotion.framework */; };
+		18814AE71C5A0B130019ABB5 /* FxGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18814AE61C5A0B130019ABB5 /* FxGlobal.swift */; };
+		18FB6DEA1C5C49C8007918F4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FB6DE81C5C49C8007918F4 /* MainViewController.swift */; };
+		18FB6DEB1C5C49C8007918F4 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FB6DE91C5C49C8007918F4 /* MainViewController.xib */; };
+		18FB6DF41C5C5B05007918F4 /* back_class_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FB6DED1C5C5B05007918F4 /* back_class_normal.png */; };
+		18FB6DF51C5C5B05007918F4 /* Haru in Resources */ = {isa = PBXBuildFile; fileRef = 18FB6DEE1C5C5B05007918F4 /* Haru */; };
+		18FB6DF61C5C5B05007918F4 /* HaruFullPack in Resources */ = {isa = PBXBuildFile; fileRef = 18FB6DEF1C5C5B05007918F4 /* HaruFullPack */; };
+		18FB6DF71C5C5B05007918F4 /* Miku in Resources */ = {isa = PBXBuildFile; fileRef = 18FB6DF01C5C5B05007918F4 /* Miku */; };
+		18FB6DF81C5C5B05007918F4 /* ShizukuFullPack in Resources */ = {isa = PBXBuildFile; fileRef = 18FB6DF11C5C5B05007918F4 /* ShizukuFullPack */; };
+		18FB6DF91C5C5B05007918F4 /* WankoFullPack in Resources */ = {isa = PBXBuildFile; fileRef = 18FB6DF21C5C5B05007918F4 /* WankoFullPack */; };
+		18FB6DFA1C5C5B05007918F4 /* Wankoromochi in Resources */ = {isa = PBXBuildFile; fileRef = 18FB6DF31C5C5B05007918F4 /* Wankoromochi */; };
+		18FB6DFD1C5C7A88007918F4 /* MikuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FB6DFC1C5C7A88007918F4 /* MikuViewController.swift */; };
+		18FB6E001C5C8DCD007918F4 /* WankoromochiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FB6DFF1C5C8DCD007918F4 /* WankoromochiViewController.swift */; };
+		18FB6E021C5C90C7007918F4 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 18FB6E011C5C90C7007918F4 /* README.md */; };
+		18FB6E051C5C91D4007918F4 /* OfficalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FB6E041C5C91D4007918F4 /* OfficalViewController.swift */; };
+		18FB6E0D1C5C9A3C007918F4 /* OfficalViewControllerOC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18FB6E0C1C5C9A3C007918F4 /* OfficalViewControllerOC.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		188148001C59FC400019ABB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 188147E31C59FC400019ABB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 188147EA1C59FC400019ABB5;
+			remoteInfo = Live2DDemo;
+		};
+		1881480B1C59FC400019ABB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 188147E31C59FC400019ABB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 188147EA1C59FC400019ABB5;
+			remoteInfo = Live2DDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		180FB7BA1C5B5F3500AF0FFC /* HaruViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HaruViewController.swift; sourceTree = "<group>"; };
+		1833D5BC1C5B1E1F00897BA6 /* DaiLive2DViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DaiLive2DViewController.h; sourceTree = "<group>"; };
+		1833D5BD1C5B1E1F00897BA6 /* DaiLive2DViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DaiLive2DViewController.mm; sourceTree = "<group>"; };
+		1833D5BF1C5B1E1F00897BA6 /* Live2DInfoLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Live2DInfoLoader.h; sourceTree = "<group>"; };
+		1833D5C01C5B1E1F00897BA6 /* Live2DInfoLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Live2DInfoLoader.m; sourceTree = "<group>"; };
+		1833D5C11C5B1E1F00897BA6 /* Live2DParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Live2DParameter.h; sourceTree = "<group>"; };
+		1833D5C21C5B1E1F00897BA6 /* Live2DParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Live2DParameter.m; sourceTree = "<group>"; };
+		1833D5C31C5B1E1F00897BA6 /* Live2DParameterValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Live2DParameterValue.h; sourceTree = "<group>"; };
+		1833D5C41C5B1E1F00897BA6 /* Live2DParameterValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Live2DParameterValue.m; sourceTree = "<group>"; };
+		1833D5C51C5B1E1F00897BA6 /* Live2DPart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Live2DPart.h; sourceTree = "<group>"; };
+		1833D5C61C5B1E1F00897BA6 /* Live2DPart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Live2DPart.m; sourceTree = "<group>"; };
+		1833D5C71C5B1E1F00897BA6 /* Live2DPartValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Live2DPartValue.h; sourceTree = "<group>"; };
+		1833D5C81C5B1E1F00897BA6 /* Live2DPartValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Live2DPartValue.m; sourceTree = "<group>"; };
+		1833D5D01C5B2CEA00897BA6 /* CustomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
+		1833D5D11C5B2CEA00897BA6 /* CustomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomViewController.xib; sourceTree = "<group>"; };
+		188147EB1C59FC400019ABB5 /* Live2DDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Live2DDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		188147EE1C59FC400019ABB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		188147F01C59FC400019ABB5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		188147F51C59FC400019ABB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		188147F81C59FC400019ABB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		188147FA1C59FC400019ABB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		188147FF1C59FC400019ABB5 /* Live2DDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Live2DDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		188148031C59FC400019ABB5 /* Live2DDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Live2DDemoTests.swift; sourceTree = "<group>"; };
+		188148051C59FC400019ABB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1881480A1C59FC400019ABB5 /* Live2DDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Live2DDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1881480E1C59FC400019ABB5 /* Live2DDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Live2DDemoUITests.swift; sourceTree = "<group>"; };
+		188148101C59FC400019ABB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1881481D1C59FD550019ABB5 /* Live2DDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Live2DDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		1881481E1C59FD560019ABB5 /* IPlatformManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPlatformManager.h; sourceTree = "<group>"; };
+		1881481F1C59FD560019ABB5 /* L2DBaseModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = L2DBaseModel.cpp; sourceTree = "<group>"; };
+		188148201C59FD560019ABB5 /* L2DBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L2DBaseModel.h; sourceTree = "<group>"; };
+		188148211C59FD560019ABB5 /* L2DExpressionMotion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = L2DExpressionMotion.cpp; sourceTree = "<group>"; };
+		188148221C59FD560019ABB5 /* L2DExpressionMotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L2DExpressionMotion.h; sourceTree = "<group>"; };
+		188148231C59FD560019ABB5 /* L2DEyeBlink.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = L2DEyeBlink.cpp; sourceTree = "<group>"; };
+		188148241C59FD560019ABB5 /* L2DEyeBlink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L2DEyeBlink.h; sourceTree = "<group>"; };
+		188148251C59FD560019ABB5 /* L2DMatrix44.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = L2DMatrix44.cpp; sourceTree = "<group>"; };
+		188148261C59FD560019ABB5 /* L2DMatrix44.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L2DMatrix44.h; sourceTree = "<group>"; };
+		188148271C59FD560019ABB5 /* L2DModelMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = L2DModelMatrix.cpp; sourceTree = "<group>"; };
+		188148281C59FD560019ABB5 /* L2DModelMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L2DModelMatrix.h; sourceTree = "<group>"; };
+		188148291C59FD560019ABB5 /* L2DMotionManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = L2DMotionManager.cpp; sourceTree = "<group>"; };
+		1881482A1C59FD560019ABB5 /* L2DMotionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L2DMotionManager.h; sourceTree = "<group>"; };
+		1881482B1C59FD560019ABB5 /* L2DPhysics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = L2DPhysics.cpp; sourceTree = "<group>"; };
+		1881482C1C59FD560019ABB5 /* L2DPhysics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L2DPhysics.h; sourceTree = "<group>"; };
+		1881482D1C59FD560019ABB5 /* L2DPose.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = L2DPose.cpp; sourceTree = "<group>"; };
+		1881482E1C59FD560019ABB5 /* L2DPose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L2DPose.h; sourceTree = "<group>"; };
+		1881482F1C59FD560019ABB5 /* L2DStandardID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L2DStandardID.h; sourceTree = "<group>"; };
+		188148301C59FD560019ABB5 /* L2DTargetPoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = L2DTargetPoint.cpp; sourceTree = "<group>"; };
+		188148311C59FD560019ABB5 /* L2DTargetPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L2DTargetPoint.h; sourceTree = "<group>"; };
+		188148321C59FD560019ABB5 /* L2DTextureDesc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = L2DTextureDesc.cpp; sourceTree = "<group>"; };
+		188148331C59FD560019ABB5 /* L2DTextureDesc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L2DTextureDesc.h; sourceTree = "<group>"; };
+		188148341C59FD560019ABB5 /* L2DViewMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = L2DViewMatrix.cpp; sourceTree = "<group>"; };
+		188148351C59FD560019ABB5 /* L2DViewMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L2DViewMatrix.h; sourceTree = "<group>"; };
+		188148361C59FD560019ABB5 /* Live2DFramework.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Live2DFramework.cpp; sourceTree = "<group>"; };
+		188148371C59FD560019ABB5 /* Live2DFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Live2DFramework.h; sourceTree = "<group>"; };
+		188148B51C5A01C10019ABB5 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		188148B71C5A01D10019ABB5 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		188149901C5A04700019ABB5 /* AccelHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccelHelper.h; sourceTree = "<group>"; };
+		188149911C5A04700019ABB5 /* AccelHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AccelHelper.mm; sourceTree = "<group>"; };
+		188149921C5A04700019ABB5 /* FileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileManager.h; sourceTree = "<group>"; };
+		188149931C5A04700019ABB5 /* FileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileManager.m; sourceTree = "<group>"; };
+		188149941C5A04700019ABB5 /* LAppDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAppDefine.h; sourceTree = "<group>"; };
+		188149951C5A04700019ABB5 /* LAppLive2DManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAppLive2DManager.h; sourceTree = "<group>"; };
+		188149961C5A04700019ABB5 /* LAppLive2DManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LAppLive2DManager.mm; sourceTree = "<group>"; };
+		188149971C5A04700019ABB5 /* LAppModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAppModel.h; sourceTree = "<group>"; };
+		188149981C5A04700019ABB5 /* LAppModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LAppModel.mm; sourceTree = "<group>"; };
+		188149991C5A04700019ABB5 /* LAppRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAppRenderer.h; sourceTree = "<group>"; };
+		1881499A1C5A04700019ABB5 /* LAppRenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LAppRenderer.mm; sourceTree = "<group>"; };
+		1881499B1C5A04700019ABB5 /* LAppTextureDesc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAppTextureDesc.h; sourceTree = "<group>"; };
+		1881499C1C5A04700019ABB5 /* LAppTextureDesc.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LAppTextureDesc.mm; sourceTree = "<group>"; };
+		1881499D1C5A04700019ABB5 /* LAppView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAppView.h; sourceTree = "<group>"; };
+		1881499E1C5A04700019ABB5 /* LAppView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LAppView.mm; sourceTree = "<group>"; };
+		1881499F1C5A04700019ABB5 /* ModelSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelSetting.h; sourceTree = "<group>"; };
+		188149A01C5A04700019ABB5 /* ModelSetting.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ModelSetting.mm; sourceTree = "<group>"; };
+		188149A11C5A04700019ABB5 /* OffScreenImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OffScreenImage.h; sourceTree = "<group>"; };
+		188149A21C5A04700019ABB5 /* OffScreenImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OffScreenImage.m; sourceTree = "<group>"; };
+		188149A31C5A04700019ABB5 /* PlatformManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformManager.h; sourceTree = "<group>"; };
+		188149A41C5A04700019ABB5 /* PlatformManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PlatformManager.mm; sourceTree = "<group>"; };
+		188149A51C5A04700019ABB5 /* SimpleImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleImage.h; sourceTree = "<group>"; };
+		188149A61C5A04700019ABB5 /* SimpleImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleImage.m; sourceTree = "<group>"; };
+		188149A71C5A04700019ABB5 /* TouchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchManager.h; sourceTree = "<group>"; };
+		188149A81C5A04700019ABB5 /* TouchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchManager.m; sourceTree = "<group>"; };
+		188149B51C5A066E0019ABB5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		188149B71C5A067D0019ABB5 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		18814AE61C5A0B130019ABB5 /* FxGlobal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FxGlobal.swift; sourceTree = "<group>"; };
+		18FB6DE81C5C49C8007918F4 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		18FB6DE91C5C49C8007918F4 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		18FB6DED1C5C5B05007918F4 /* back_class_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_class_normal.png; sourceTree = "<group>"; };
+		18FB6DEE1C5C5B05007918F4 /* Haru */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Haru; sourceTree = "<group>"; };
+		18FB6DEF1C5C5B05007918F4 /* HaruFullPack */ = {isa = PBXFileReference; lastKnownFileType = folder; path = HaruFullPack; sourceTree = "<group>"; };
+		18FB6DF01C5C5B05007918F4 /* Miku */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Miku; sourceTree = "<group>"; };
+		18FB6DF11C5C5B05007918F4 /* ShizukuFullPack */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ShizukuFullPack; sourceTree = "<group>"; };
+		18FB6DF21C5C5B05007918F4 /* WankoFullPack */ = {isa = PBXFileReference; lastKnownFileType = folder; path = WankoFullPack; sourceTree = "<group>"; };
+		18FB6DF31C5C5B05007918F4 /* Wankoromochi */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Wankoromochi; sourceTree = "<group>"; };
+		18FB6DFC1C5C7A88007918F4 /* MikuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MikuViewController.swift; sourceTree = "<group>"; };
+		18FB6DFF1C5C8DCD007918F4 /* WankoromochiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WankoromochiViewController.swift; sourceTree = "<group>"; };
+		18FB6E011C5C90C7007918F4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		18FB6E041C5C91D4007918F4 /* OfficalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfficalViewController.swift; sourceTree = "<group>"; };
+		18FB6E091C5C962F007918F4 /* Live2DDemo-Enum-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Live2DDemo-Enum-Swift.h"; sourceTree = "<group>"; };
+		18FB6E0B1C5C9A3C007918F4 /* OfficalViewControllerOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfficalViewControllerOC.h; sourceTree = "<group>"; };
+		18FB6E0C1C5C9A3C007918F4 /* OfficalViewControllerOC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OfficalViewControllerOC.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		188147E81C59FC400019ABB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				188149B81C5A067D0019ABB5 /* CoreMotion.framework in Frameworks */,
+				188149B61C5A066E0019ABB5 /* AVFoundation.framework in Frameworks */,
+				188148B81C5A01D10019ABB5 /* OpenGLES.framework in Frameworks */,
+				188148B61C5A01C10019ABB5 /* GLKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		188147FC1C59FC400019ABB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		188148071C59FC400019ABB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		180FB7B81C5B5EC100AF0FFC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18FB6DE81C5C49C8007918F4 /* MainViewController.swift */,
+				18FB6DE91C5C49C8007918F4 /* MainViewController.xib */,
+				18FB6DE61C5C4961007918F4 /* scene */,
+				18FB6DE51C5C4925007918F4 /* Persion */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		180FB7B91C5B5EE100AF0FFC /* HaruViewController */ = {
+			isa = PBXGroup;
+			children = (
+				180FB7BA1C5B5F3500AF0FFC /* HaruViewController.swift */,
+			);
+			name = HaruViewController;
+			sourceTree = "<group>";
+		};
+		1833D5BB1C5B1E1F00897BA6 /* DaiLive2DViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1833D5BC1C5B1E1F00897BA6 /* DaiLive2DViewController.h */,
+				1833D5BD1C5B1E1F00897BA6 /* DaiLive2DViewController.mm */,
+			);
+			path = DaiLive2DViewController;
+			sourceTree = "<group>";
+		};
+		1833D5BE1C5B1E1F00897BA6 /* Live2DInfoLoader */ = {
+			isa = PBXGroup;
+			children = (
+				1833D5BF1C5B1E1F00897BA6 /* Live2DInfoLoader.h */,
+				1833D5C01C5B1E1F00897BA6 /* Live2DInfoLoader.m */,
+				1833D5C11C5B1E1F00897BA6 /* Live2DParameter.h */,
+				1833D5C21C5B1E1F00897BA6 /* Live2DParameter.m */,
+				1833D5C31C5B1E1F00897BA6 /* Live2DParameterValue.h */,
+				1833D5C41C5B1E1F00897BA6 /* Live2DParameterValue.m */,
+				1833D5C51C5B1E1F00897BA6 /* Live2DPart.h */,
+				1833D5C61C5B1E1F00897BA6 /* Live2DPart.m */,
+				1833D5C71C5B1E1F00897BA6 /* Live2DPartValue.h */,
+				1833D5C81C5B1E1F00897BA6 /* Live2DPartValue.m */,
+			);
+			name = Live2DInfoLoader;
+			path = DaiLive2DViewController/Live2DInfoLoader;
+			sourceTree = "<group>";
+		};
+		1833D5CF1C5B2CC100897BA6 /* CustomViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1833D5D01C5B2CEA00897BA6 /* CustomViewController.swift */,
+				1833D5D11C5B2CEA00897BA6 /* CustomViewController.xib */,
+			);
+			name = CustomViewController;
+			sourceTree = "<group>";
+		};
+		188147E21C59FC400019ABB5 = {
+			isa = PBXGroup;
+			children = (
+				18FB6E011C5C90C7007918F4 /* README.md */,
+				188147ED1C59FC400019ABB5 /* Live2DDemo */,
+				188148021C59FC400019ABB5 /* Live2DDemoTests */,
+				1881480D1C59FC400019ABB5 /* Live2DDemoUITests */,
+				188147EC1C59FC400019ABB5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		188147EC1C59FC400019ABB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				188147EB1C59FC400019ABB5 /* Live2DDemo.app */,
+				188147FF1C59FC400019ABB5 /* Live2DDemoTests.xctest */,
+				1881480A1C59FC400019ABB5 /* Live2DDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		188147ED1C59FC400019ABB5 /* Live2DDemo */ = {
+			isa = PBXGroup;
+			children = (
+				18814AE51C5A0AB10019ABB5 /* Global */,
+				1881481C1C59FC4F0019ABB5 /* Live2DFramework */,
+				1881498F1C5A04700019ABB5 /* OfficalLive2DTools */,
+				180FB7B81C5B5EC100AF0FFC /* Controller */,
+				188147EE1C59FC400019ABB5 /* AppDelegate.swift */,
+				188147F01C59FC400019ABB5 /* ViewController.swift */,
+				18FB6E0A1C5C9645007918F4 /* Support File */,
+				188147F51C59FC400019ABB5 /* Assets.xcassets */,
+				188147FA1C59FC400019ABB5 /* Info.plist */,
+				18FB6DEC1C5C5AD8007918F4 /* Live2DResource */,
+				188148B91C5A02170019ABB5 /* Framework */,
+			);
+			path = Live2DDemo;
+			sourceTree = "<group>";
+		};
+		188148021C59FC400019ABB5 /* Live2DDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				188148031C59FC400019ABB5 /* Live2DDemoTests.swift */,
+				188148051C59FC400019ABB5 /* Info.plist */,
+			);
+			path = Live2DDemoTests;
+			sourceTree = "<group>";
+		};
+		1881480D1C59FC400019ABB5 /* Live2DDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1881480E1C59FC400019ABB5 /* Live2DDemoUITests.swift */,
+				188148101C59FC400019ABB5 /* Info.plist */,
+			);
+			path = Live2DDemoUITests;
+			sourceTree = "<group>";
+		};
+		1881481C1C59FC4F0019ABB5 /* Live2DFramework */ = {
+			isa = PBXGroup;
+			children = (
+				1881481E1C59FD560019ABB5 /* IPlatformManager.h */,
+				1881481F1C59FD560019ABB5 /* L2DBaseModel.cpp */,
+				188148201C59FD560019ABB5 /* L2DBaseModel.h */,
+				188148211C59FD560019ABB5 /* L2DExpressionMotion.cpp */,
+				188148221C59FD560019ABB5 /* L2DExpressionMotion.h */,
+				188148231C59FD560019ABB5 /* L2DEyeBlink.cpp */,
+				188148241C59FD560019ABB5 /* L2DEyeBlink.h */,
+				188148251C59FD560019ABB5 /* L2DMatrix44.cpp */,
+				188148261C59FD560019ABB5 /* L2DMatrix44.h */,
+				188148271C59FD560019ABB5 /* L2DModelMatrix.cpp */,
+				188148281C59FD560019ABB5 /* L2DModelMatrix.h */,
+				188148291C59FD560019ABB5 /* L2DMotionManager.cpp */,
+				1881482A1C59FD560019ABB5 /* L2DMotionManager.h */,
+				1881482B1C59FD560019ABB5 /* L2DPhysics.cpp */,
+				1881482C1C59FD560019ABB5 /* L2DPhysics.h */,
+				1881482D1C59FD560019ABB5 /* L2DPose.cpp */,
+				1881482E1C59FD560019ABB5 /* L2DPose.h */,
+				1881482F1C59FD560019ABB5 /* L2DStandardID.h */,
+				188148301C59FD560019ABB5 /* L2DTargetPoint.cpp */,
+				188148311C59FD560019ABB5 /* L2DTargetPoint.h */,
+				188148321C59FD560019ABB5 /* L2DTextureDesc.cpp */,
+				188148331C59FD560019ABB5 /* L2DTextureDesc.h */,
+				188148341C59FD560019ABB5 /* L2DViewMatrix.cpp */,
+				188148351C59FD560019ABB5 /* L2DViewMatrix.h */,
+				188148361C59FD560019ABB5 /* Live2DFramework.cpp */,
+				188148371C59FD560019ABB5 /* Live2DFramework.h */,
+			);
+			path = Live2DFramework;
+			sourceTree = "<group>";
+		};
+		188148B91C5A02170019ABB5 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				188149B71C5A067D0019ABB5 /* CoreMotion.framework */,
+				188149B51C5A066E0019ABB5 /* AVFoundation.framework */,
+				188148B71C5A01D10019ABB5 /* OpenGLES.framework */,
+				188148B51C5A01C10019ABB5 /* GLKit.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		1881498F1C5A04700019ABB5 /* OfficalLive2DTools */ = {
+			isa = PBXGroup;
+			children = (
+				188149901C5A04700019ABB5 /* AccelHelper.h */,
+				188149911C5A04700019ABB5 /* AccelHelper.mm */,
+				188149921C5A04700019ABB5 /* FileManager.h */,
+				188149931C5A04700019ABB5 /* FileManager.m */,
+				188149941C5A04700019ABB5 /* LAppDefine.h */,
+				188149951C5A04700019ABB5 /* LAppLive2DManager.h */,
+				188149961C5A04700019ABB5 /* LAppLive2DManager.mm */,
+				188149971C5A04700019ABB5 /* LAppModel.h */,
+				188149981C5A04700019ABB5 /* LAppModel.mm */,
+				188149991C5A04700019ABB5 /* LAppRenderer.h */,
+				1881499A1C5A04700019ABB5 /* LAppRenderer.mm */,
+				1881499B1C5A04700019ABB5 /* LAppTextureDesc.h */,
+				1881499C1C5A04700019ABB5 /* LAppTextureDesc.mm */,
+				1881499D1C5A04700019ABB5 /* LAppView.h */,
+				1881499E1C5A04700019ABB5 /* LAppView.mm */,
+				1881499F1C5A04700019ABB5 /* ModelSetting.h */,
+				188149A01C5A04700019ABB5 /* ModelSetting.mm */,
+				188149A11C5A04700019ABB5 /* OffScreenImage.h */,
+				188149A21C5A04700019ABB5 /* OffScreenImage.m */,
+				188149A31C5A04700019ABB5 /* PlatformManager.h */,
+				188149A41C5A04700019ABB5 /* PlatformManager.mm */,
+				188149A51C5A04700019ABB5 /* SimpleImage.h */,
+				188149A61C5A04700019ABB5 /* SimpleImage.m */,
+				188149A71C5A04700019ABB5 /* TouchManager.h */,
+				188149A81C5A04700019ABB5 /* TouchManager.m */,
+			);
+			path = OfficalLive2DTools;
+			sourceTree = "<group>";
+		};
+		18814AE11C5A07D50019ABB5 /* Live2DViewController(Swift) */ = {
+			isa = PBXGroup;
+			children = (
+				18814AE21C5A08160019ABB5 /* Live2DInfoLoader(Swift) */,
+			);
+			name = "Live2DViewController(Swift)";
+			sourceTree = "<group>";
+		};
+		18814AE21C5A08160019ABB5 /* Live2DInfoLoader(Swift) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Live2DInfoLoader(Swift)";
+			sourceTree = "<group>";
+		};
+		18814AE51C5A0AB10019ABB5 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				18814AE61C5A0B130019ABB5 /* FxGlobal.swift */,
+			);
+			name = Global;
+			sourceTree = "<group>";
+		};
+		18FB6DE51C5C4925007918F4 /* Persion */ = {
+			isa = PBXGroup;
+			children = (
+				18FB6DE71C5C4998007918F4 /* Base */,
+				180FB7B91C5B5EE100AF0FFC /* HaruViewController */,
+				18FB6DFB1C5C7A59007918F4 /* MikuViewController */,
+				18FB6DFE1C5C8DBB007918F4 /* WankoromochiViewController */,
+			);
+			name = Persion;
+			sourceTree = "<group>";
+		};
+		18FB6DE61C5C4961007918F4 /* scene */ = {
+			isa = PBXGroup;
+			children = (
+				18FB6E031C5C9196007918F4 /* OfficalViewController */,
+				1833D5CF1C5B2CC100897BA6 /* CustomViewController */,
+			);
+			name = scene;
+			sourceTree = "<group>";
+		};
+		18FB6DE71C5C4998007918F4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				1833D5BE1C5B1E1F00897BA6 /* Live2DInfoLoader */,
+				1833D5BB1C5B1E1F00897BA6 /* DaiLive2DViewController */,
+				18814AE11C5A07D50019ABB5 /* Live2DViewController(Swift) */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		18FB6DEC1C5C5AD8007918F4 /* Live2DResource */ = {
+			isa = PBXGroup;
+			children = (
+				18FB6DED1C5C5B05007918F4 /* back_class_normal.png */,
+				18FB6DEE1C5C5B05007918F4 /* Haru */,
+				18FB6DEF1C5C5B05007918F4 /* HaruFullPack */,
+				18FB6DF01C5C5B05007918F4 /* Miku */,
+				18FB6DF11C5C5B05007918F4 /* ShizukuFullPack */,
+				18FB6DF21C5C5B05007918F4 /* WankoFullPack */,
+				18FB6DF31C5C5B05007918F4 /* Wankoromochi */,
+			);
+			name = Live2DResource;
+			sourceTree = "<group>";
+		};
+		18FB6DFB1C5C7A59007918F4 /* MikuViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18FB6DFC1C5C7A88007918F4 /* MikuViewController.swift */,
+			);
+			name = MikuViewController;
+			sourceTree = "<group>";
+		};
+		18FB6DFE1C5C8DBB007918F4 /* WankoromochiViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18FB6DFF1C5C8DCD007918F4 /* WankoromochiViewController.swift */,
+			);
+			name = WankoromochiViewController;
+			sourceTree = "<group>";
+		};
+		18FB6E031C5C9196007918F4 /* OfficalViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18FB6E041C5C91D4007918F4 /* OfficalViewController.swift */,
+				18FB6E0B1C5C9A3C007918F4 /* OfficalViewControllerOC.h */,
+				18FB6E0C1C5C9A3C007918F4 /* OfficalViewControllerOC.mm */,
+			);
+			name = OfficalViewController;
+			sourceTree = "<group>";
+		};
+		18FB6E0A1C5C9645007918F4 /* Support File */ = {
+			isa = PBXGroup;
+			children = (
+				18FB6E091C5C962F007918F4 /* Live2DDemo-Enum-Swift.h */,
+				1881481D1C59FD550019ABB5 /* Live2DDemo-Bridging-Header.h */,
+				188147F71C59FC400019ABB5 /* LaunchScreen.storyboard */,
+			);
+			name = "Support File";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		188147EA1C59FC400019ABB5 /* Live2DDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 188148131C59FC400019ABB5 /* Build configuration list for PBXNativeTarget "Live2DDemo" */;
+			buildPhases = (
+				188147E71C59FC400019ABB5 /* Sources */,
+				188147E81C59FC400019ABB5 /* Frameworks */,
+				188147E91C59FC400019ABB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Live2DDemo;
+			productName = Live2DDemo;
+			productReference = 188147EB1C59FC400019ABB5 /* Live2DDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		188147FE1C59FC400019ABB5 /* Live2DDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 188148161C59FC400019ABB5 /* Build configuration list for PBXNativeTarget "Live2DDemoTests" */;
+			buildPhases = (
+				188147FB1C59FC400019ABB5 /* Sources */,
+				188147FC1C59FC400019ABB5 /* Frameworks */,
+				188147FD1C59FC400019ABB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				188148011C59FC400019ABB5 /* PBXTargetDependency */,
+			);
+			name = Live2DDemoTests;
+			productName = Live2DDemoTests;
+			productReference = 188147FF1C59FC400019ABB5 /* Live2DDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		188148091C59FC400019ABB5 /* Live2DDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 188148191C59FC400019ABB5 /* Build configuration list for PBXNativeTarget "Live2DDemoUITests" */;
+			buildPhases = (
+				188148061C59FC400019ABB5 /* Sources */,
+				188148071C59FC400019ABB5 /* Frameworks */,
+				188148081C59FC400019ABB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1881480C1C59FC400019ABB5 /* PBXTargetDependency */,
+			);
+			name = Live2DDemoUITests;
+			productName = Live2DDemoUITests;
+			productReference = 1881480A1C59FC400019ABB5 /* Live2DDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		188147E31C59FC400019ABB5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = apple;
+				TargetAttributes = {
+					188147EA1C59FC400019ABB5 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = CUG4Z75YKW;
+					};
+					188147FE1C59FC400019ABB5 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 188147EA1C59FC400019ABB5;
+					};
+					188148091C59FC400019ABB5 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 188147EA1C59FC400019ABB5;
+					};
+				};
+			};
+			buildConfigurationList = 188147E61C59FC400019ABB5 /* Build configuration list for PBXProject "Live2DDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 188147E21C59FC400019ABB5;
+			productRefGroup = 188147EC1C59FC400019ABB5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				188147EA1C59FC400019ABB5 /* Live2DDemo */,
+				188147FE1C59FC400019ABB5 /* Live2DDemoTests */,
+				188148091C59FC400019ABB5 /* Live2DDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		188147E91C59FC400019ABB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18FB6DF61C5C5B05007918F4 /* HaruFullPack in Resources */,
+				18FB6DF81C5C5B05007918F4 /* ShizukuFullPack in Resources */,
+				188147F91C59FC400019ABB5 /* LaunchScreen.storyboard in Resources */,
+				18FB6DF71C5C5B05007918F4 /* Miku in Resources */,
+				1833D5D31C5B2CEA00897BA6 /* CustomViewController.xib in Resources */,
+				18FB6DF51C5C5B05007918F4 /* Haru in Resources */,
+				18FB6DF41C5C5B05007918F4 /* back_class_normal.png in Resources */,
+				18FB6DFA1C5C5B05007918F4 /* Wankoromochi in Resources */,
+				188147F61C59FC400019ABB5 /* Assets.xcassets in Resources */,
+				18FB6DEB1C5C49C8007918F4 /* MainViewController.xib in Resources */,
+				18FB6DF91C5C5B05007918F4 /* WankoFullPack in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		188147FD1C59FC400019ABB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		188148081C59FC400019ABB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		188147E71C59FC400019ABB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1881483D1C59FD560019ABB5 /* L2DMotionManager.cpp in Sources */,
+				1881483E1C59FD560019ABB5 /* L2DPhysics.cpp in Sources */,
+				180FB7BB1C5B5F3500AF0FFC /* HaruViewController.swift in Sources */,
+				1833D5CA1C5B1E1F00897BA6 /* Live2DInfoLoader.m in Sources */,
+				188149A91C5A04700019ABB5 /* AccelHelper.mm in Sources */,
+				188149AA1C5A04700019ABB5 /* FileManager.m in Sources */,
+				1833D5D21C5B2CEA00897BA6 /* CustomViewController.swift in Sources */,
+				18814AE71C5A0B130019ABB5 /* FxGlobal.swift in Sources */,
+				188148431C59FD560019ABB5 /* Live2DFramework.cpp in Sources */,
+				188149B11C5A04700019ABB5 /* OffScreenImage.m in Sources */,
+				1881483A1C59FD560019ABB5 /* L2DEyeBlink.cpp in Sources */,
+				18FB6DFD1C5C7A88007918F4 /* MikuViewController.swift in Sources */,
+				1881483C1C59FD560019ABB5 /* L2DModelMatrix.cpp in Sources */,
+				188148421C59FD560019ABB5 /* L2DViewMatrix.cpp in Sources */,
+				1833D5CB1C5B1E1F00897BA6 /* Live2DParameter.m in Sources */,
+				188149B01C5A04700019ABB5 /* ModelSetting.mm in Sources */,
+				18FB6DEA1C5C49C8007918F4 /* MainViewController.swift in Sources */,
+				1833D5CD1C5B1E1F00897BA6 /* Live2DPart.m in Sources */,
+				1881483B1C59FD560019ABB5 /* L2DMatrix44.cpp in Sources */,
+				188148411C59FD560019ABB5 /* L2DTextureDesc.cpp in Sources */,
+				1833D5CC1C5B1E1F00897BA6 /* Live2DParameterValue.m in Sources */,
+				188149B31C5A04700019ABB5 /* SimpleImage.m in Sources */,
+				18FB6E0D1C5C9A3C007918F4 /* OfficalViewControllerOC.mm in Sources */,
+				188149AF1C5A04700019ABB5 /* LAppView.mm in Sources */,
+				1881483F1C59FD560019ABB5 /* L2DPose.cpp in Sources */,
+				1833D5C91C5B1E1F00897BA6 /* DaiLive2DViewController.mm in Sources */,
+				18FB6E051C5C91D4007918F4 /* OfficalViewController.swift in Sources */,
+				1833D5CE1C5B1E1F00897BA6 /* Live2DPartValue.m in Sources */,
+				188149AE1C5A04700019ABB5 /* LAppTextureDesc.mm in Sources */,
+				188148391C59FD560019ABB5 /* L2DExpressionMotion.cpp in Sources */,
+				188148401C59FD560019ABB5 /* L2DTargetPoint.cpp in Sources */,
+				188148381C59FD560019ABB5 /* L2DBaseModel.cpp in Sources */,
+				18FB6E021C5C90C7007918F4 /* README.md in Sources */,
+				188149B41C5A04700019ABB5 /* TouchManager.m in Sources */,
+				188149B21C5A04700019ABB5 /* PlatformManager.mm in Sources */,
+				18FB6E001C5C8DCD007918F4 /* WankoromochiViewController.swift in Sources */,
+				188147F11C59FC400019ABB5 /* ViewController.swift in Sources */,
+				188149AD1C5A04700019ABB5 /* LAppRenderer.mm in Sources */,
+				188147EF1C59FC400019ABB5 /* AppDelegate.swift in Sources */,
+				188149AC1C5A04700019ABB5 /* LAppModel.mm in Sources */,
+				188149AB1C5A04700019ABB5 /* LAppLive2DManager.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		188147FB1C59FC400019ABB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				188148041C59FC400019ABB5 /* Live2DDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		188148061C59FC400019ABB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1881480F1C59FC400019ABB5 /* Live2DDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		188148011C59FC400019ABB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 188147EA1C59FC400019ABB5 /* Live2DDemo */;
+			targetProxy = 188148001C59FC400019ABB5 /* PBXContainerItemProxy */;
+		};
+		1881480C1C59FC400019ABB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 188147EA1C59FC400019ABB5 /* Live2DDemo */;
+			targetProxy = 1881480B1C59FC400019ABB5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		188147F71C59FC400019ABB5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				188147F81C59FC400019ABB5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		188148111C59FC400019ABB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		188148121C59FC400019ABB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		188148141C59FC400019ABB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					L2D_TARGET_IPHONE,
+				);
+				INFOPLIST_FILE = Live2DDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Live2DDemo/Live2DSDK/lib/$(CONFIGURATION)-$(PLATFORM_NAME)",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-lLive2D";
+				OTHER_SWIFT_FLAGS = "-D DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = com.objc.Live2DDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Live2DDemo/Live2DDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Live2DDemo/Live2DSDK/include";
+			};
+			name = Debug;
+		};
+		188148151C59FC400019ABB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = L2D_TARGET_IPHONE;
+				INFOPLIST_FILE = Live2DDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Live2DDemo/Live2DSDK/lib/$(CONFIGURATION)-$(PLATFORM_NAME)",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-lLive2D";
+				OTHER_SWIFT_FLAGS = "-D DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = com.objc.Live2DDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Live2DDemo/Live2DDemo-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Live2DDemo/Live2DSDK/include";
+			};
+			name = Release;
+		};
+		188148171C59FC400019ABB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Live2DDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.objc.Live2DDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Live2DDemo.app/Live2DDemo";
+			};
+			name = Debug;
+		};
+		188148181C59FC400019ABB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Live2DDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.objc.Live2DDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Live2DDemo.app/Live2DDemo";
+			};
+			name = Release;
+		};
+		1881481A1C59FC400019ABB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Live2DDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.objc.Live2DDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Live2DDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		1881481B1C59FC400019ABB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Live2DDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.objc.Live2DDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Live2DDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		188147E61C59FC400019ABB5 /* Build configuration list for PBXProject "Live2DDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				188148111C59FC400019ABB5 /* Debug */,
+				188148121C59FC400019ABB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		188148131C59FC400019ABB5 /* Build configuration list for PBXNativeTarget "Live2DDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				188148141C59FC400019ABB5 /* Debug */,
+				188148151C59FC400019ABB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		188148161C59FC400019ABB5 /* Build configuration list for PBXNativeTarget "Live2DDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				188148171C59FC400019ABB5 /* Debug */,
+				188148181C59FC400019ABB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		188148191C59FC400019ABB5 /* Build configuration list for PBXNativeTarget "Live2DDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1881481A1C59FC400019ABB5 /* Debug */,
+				1881481B1C59FC400019ABB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 188147E31C59FC400019ABB5 /* Project object */;
+}

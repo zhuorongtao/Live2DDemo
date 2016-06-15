@@ -1,0 +1,1 @@
+将Live2DResource文件拖进工程中不选择create groups(选择第二项)
